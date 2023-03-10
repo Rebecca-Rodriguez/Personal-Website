@@ -16,7 +16,7 @@ This website was built using the following technologies:
 * A portfolio section that showcases my projects and skills
 
 ## Live Demo
-You can access the live demo of this website at [go](https://rebeccavelez.dev/){target="_blank"}.<a href="http://stackoverflow.com" target="_blank">Go</a>
+You can access the live demo of this website at <a href="https://rebeccavelez.dev/" target="_blank">https://rebeccavelez.dev</a>.
 
 ## Contact Me
 If you have any questions or feedback regarding this website, please feel free to reach out to me through the contact form on the website or by emailing me directly at contact@rebeccavelez.dev.
