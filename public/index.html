@@ -1,89 +1,1182 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.17.2/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.17.2/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.17.2/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.17.2/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.17.2/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.17.2/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.17.2/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.17.2/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.17.2/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.17.2/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rebecca Velez - Personal Website</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
     -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/RebeccaVelez_headshot.png" alt="Rebecca Velez" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Rebecca Velez">Rebecca Velez</h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:contact@rebeccavelez.com" class="contact-link"><u>contact@rebeccavelez.com</u></a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+                <ion-icon name="newspaper-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+                <p class="contact-title">Resume</p>
+              <a href="./assets/images/my-avatar.png" target="_blank" class="contact-link"><u>Download</u></a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/r-velez/" target="_blank" class="contact-link"><u>R-Velez</u></a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+                <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+                <p class="contact-title">Github</p>
+              <a href="https://github.com/RebeccaVelez" target="_blank" class="contact-link"><u>RebeccaVelez</u></a>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Coursework</button>
+          </li>
+
+<!--          <li class="navbar-item">-->
+<!--            <button class="navbar-link" data-nav-link>Contact</button>-->
+<!--          </li>-->
+
+        </ul>
+
+      </nav>
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hi! My name is Becca, and I am a Computer Science student at the University of Florida graduating in May 2023. I am
+            also a Grace Hopper 2022 Student Scholar and a Kamala Scholar. I have experience in back-end development from
+            multiple internships and coursework. I am interested in pursuing a career in back-end development, cybersecurity,
+            or virtual reality, but am open to other specialty areas. As a Software Engineer, my goal is to use my passion and
+            unique background to help drive company innovation and develop code that makes a meaningful impact.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">My Skills</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/programming.svg" alt="Programming Languages icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Programming Languages</h4>
+
+                <p class="service-item-text">
+                  C++, Java, Python
+                </p>
+              </div>
+
+<!--              <div class="icon-box">-->
+<!--                <ion-icon name="logo-github"></ion-icon>-->
+<!--              </div>-->
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/code-web.svg" alt="Web Technologies and Languages icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Technologies and Languages</h4>
+
+                <p class="service-item-text">
+                  HTML, CSS, JavaScript
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/database.svg" alt="Database Management Systems" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Database Management Systems</h4>
+
+                <p class="service-item-text">
+                  SQL, MySQL
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/operating-systems.svg" alt="Operating Systems" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Operating Systems</h4>
+
+                <p class="service-item-text">
+                  Windows, macOS, Linux, iOS, Android
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">What I'm Working On</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/internship-icon.svg" alt="Internship Icon" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>ERP Developer Internship</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I am assisting developers in a collaborative environment analyzing requirements, creating design specifications and prototypes, developing and testing new code, and documenting solutions.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/icon-desk.svg" alt="Desk Icon" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Senior Project with </h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    From over 870 applicant, I was selected to attend Google's 6th annual Latinx Student Leadership Summit. This event was full
+                    of leadership sessions and technical skill building workshops.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+<!--              <time datetime="2021-06-14">14 June, 2021</time>-->
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+<!--        <section class="clients">-->
+
+<!--          <h3 class="h3 clients-title">Clients</h3>-->
+
+<!--          <ul class="clients-list has-scrollbar">-->
+
+<!--            <li class="clients-item">-->
+<!--              <a href="#">-->
+<!--                <img src="./assets/images/logo-1-color.png" alt="client logo">-->
+<!--              </a>-->
+<!--            </li>-->
+
+<!--            <li class="clients-item">-->
+<!--              <a href="#">-->
+<!--                <img src="./assets/images/logo-2-color.png" alt="client logo">-->
+<!--              </a>-->
+<!--            </li>-->
+
+<!--            <li class="clients-item">-->
+<!--              <a href="#">-->
+<!--                <img src="./assets/images/logo-3-color.png" alt="client logo">-->
+<!--              </a>-->
+<!--            </li>-->
+
+<!--            <li class="clients-item">-->
+<!--              <a href="#">-->
+<!--                <img src="./assets/images/logo-4-color.png" alt="client logo">-->
+<!--              </a>-->
+<!--            </li>-->
+
+<!--            <li class="clients-item">-->
+<!--              <a href="#">-->
+<!--                <img src="./assets/images/logo-5-color.png" alt="client logo">-->
+<!--              </a>-->
+<!--            </li>-->
+
+<!--            <li class="clients-item">-->
+<!--              <a href="#">-->
+<!--                <img src="./assets/images/logo-6-color.png" alt="client logo">-->
+<!--              </a>-->
+<!--            </li>-->
+
+<!--          </ul>-->
+
+<!--        </section>-->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University of Florida</h4>
+              <p class="timeline-item-subtitle">Bachelor of Science - Computer Science</p>
+              <span>Aug 2021 — May 2023</span>
+              <p class="timeline-text">
+                GPA: 3.93
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Florida State University</h4>
+              <p class="timeline-item-subtitle">Master of Arts - International Affairs</p>
+              <span>May 2015 — Aug 2016</span>
+              <p class="timeline-text">
+                GPA: 3.90
+              </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Florida State University</h4>
+              <p class="timeline-item-subtitle">Bachelor of Science - International Affairs</p>
+              <span>Aug 2011 — May 2015</span>
+              <p class="timeline-text">
+                GPA: 3.75
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="person-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">ERP Application Developer Intern</h4>
+              <p class="timeline-item-subtitle">University of Florida</p>
+              <span>Jan 2023 — May 2023</span>
+
+              <p class="timeline-text">
+                • Assisted developers in a collaborative environment analyzing requirements, creating design specifications and prototypes, developing and testing new code, and documenting solutions.
+              </p>
+              <p class="timeline-text">
+                • Developed and tested new code that maintained the integrity of the ERP system.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Engineer Intern</h4>
+              <p class="timeline-item-subtitle">Bank of America</p>
+              <span>Jun 2022 — Aug 2022</span>
+
+              <p class="timeline-text">
+                • Created a Java utility program that accesses, compares, and validates REST APIs in order to improve LoanIQ builder productivity.
+              </p>
+              <p class="timeline-text">
+                • Worked on a Java application that tokenizes unique passwords using JSON and outputs configuration files to be used across multiple repositories by the LoanIQ team.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Computer Science Instructor</h4>
+              <p class="timeline-item-subtitle">Juni Learning</p>
+              <span>Sep 2021 — May 2022</span>
+
+              <p class="timeline-text">
+                • Taught fundamental programming concepts to over 10 students in one-on-one sessions and increased individual comprehension by over 100% in Java, Python, Scratch, and C++.
+              </p>
+
+              <p class="timeline-text">
+                • Created assignments and projects integrating learned concepts, including loops, recursion, classes, inheritance, and methods.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Tech Fellow</h4>
+              <p class="timeline-item-subtitle">CodePath.org</p>
+              <span>Jun 2021 — Dec 2021</span>
+
+              <p class="timeline-text">
+                • Instructed a semester-long iOS mobile application development course to help students build three functional apps while focusing on design and implementation of RESTful API clients.
+              </p>
+
+              <p class="timeline-text">
+                • Lead a team on developing an original app from the ground up by managing the build progress.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Manager, Research Support</h4>
+              <p class="timeline-item-subtitle">University of Miami, Miller School of Medicine</p>
+              <span>Aug 2018 — Sep 2021</span>
+
+              <p class="timeline-text">
+                • Implemented and outlined effective communications strategy to reach established All of Us Research Program goals and objectives.
+              </p>
+
+              <p class="timeline-text">
+                • Measured campaign effectiveness by utilizing Google Analytics, URLs with UTMs, QR codes, SMS keywords, and short URLs.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Assistant Director, Honors Program</h4>
+              <p class="timeline-item-subtitle">Florida State University</p>
+              <span>Dec 2016 — Jul 2018</span>
+
+              <p class="timeline-text">
+                • Strategized program requirements and pushed for improvements within our organization procedures by working closely with senior leadership.
+              </p>
+
+              <p class="timeline-text">
+                • Managed the FSU Honors website by using the open source CMS platform Drupal and Bootstrap leading to increased website engagement and click rates.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+<!--        <section class="skill">-->
+
+<!--          <h3 class="h3 skills-title">My skills</h3>-->
+
+<!--          <ul class="skills-list content-card">-->
+
+<!--            <li class="skills-item">-->
+
+<!--              <div class="title-wrapper">-->
+<!--                <h5 class="h5">Web design</h5>-->
+<!--                <data value="80">80%</data>-->
+<!--              </div>-->
+
+<!--              <div class="skill-progress-bg">-->
+<!--                <div class="skill-progress-fill" style="width: 80%;"></div>-->
+<!--              </div>-->
+
+<!--            </li>-->
+
+<!--            <li class="skills-item">-->
+
+<!--              <div class="title-wrapper">-->
+<!--                <h5 class="h5">Graphic design</h5>-->
+<!--                <data value="70">70%</data>-->
+<!--              </div>-->
+
+<!--              <div class="skill-progress-bg">-->
+<!--                <div class="skill-progress-fill" style="width: 70%;"></div>-->
+<!--              </div>-->
+
+<!--            </li>-->
+
+<!--            <li class="skills-item">-->
+
+<!--              <div class="title-wrapper">-->
+<!--                <h5 class="h5">Branding</h5>-->
+<!--                <data value="90">90%</data>-->
+<!--              </div>-->
+
+<!--              <div class="skill-progress-bg">-->
+<!--                <div class="skill-progress-fill" style="width: 90%;"></div>-->
+<!--              </div>-->
+
+<!--            </li>-->
+
+<!--            <li class="skills-item">-->
+
+<!--              <div class="title-wrapper">-->
+<!--                <h5 class="h5">WordPress</h5>-->
+<!--                <data value="50">50%</data>-->
+<!--              </div>-->
+
+<!--              <div class="skill-progress-bg">-->
+<!--                <div class="skill-progress-fill" style="width: 50%;"></div>-->
+<!--              </div>-->
+
+<!--            </li>-->
+
+<!--          </ul>-->
+
+<!--        </section>-->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #Projects
+      -->
+
+      <article class="projects" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Processing</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>C++</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Java</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Processing</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>C++</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Java</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="processing">
+              <a href="https://github.com/RebeccaVelez/Animation" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="link-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project_6.png" alt="animation" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Animation</h3>
+
+                <p class="project-category">Processing</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="processing">
+              <a href="https://github.com/RebeccaVelez/3D-Scene-Loading" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="link-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project_5.png" alt="3d-scene" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">3D Scene</h3>
+
+                <p class="project-category">Processing</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="processing">
+              <a href="https://github.com/RebeccaVelez/3D-Terrain" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="link-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project_4.png" alt="3d-terrain" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">3D Terrain</h3>
+
+                <p class="project-category">Processing</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="processing">
+              <a href="https://github.com/RebeccaVelez/3D-Rendering" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="link-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project_3.png" alt="3d-rendering" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">3D Rendering</h3>
+
+                <p class="project-category">Processing</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="processing">
+              <a href="https://github.com/RebeccaVelez/Random-Walk-Variant" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="link-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project_2.png" alt="random-walk-variant" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Random Walk Variant</h3>
+
+                <p class="project-category">Processing</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="processing">
+              <a href="https://github.com/RebeccaVelez/Random-Walk" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="link-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project_1.png" alt="random-walk" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Random Walk</h3>
+
+                <p class="project-category">Processing</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="c++">
+              <a href="https://github.com/RebeccaVelez/AVL-Tree" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="link-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/avl-tree.png" alt="avl-tree" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">AVL-Tree</h3>
+
+                <p class="project-category">C++</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="c++">
+              <a href="https://github.com/RebeccaVelez/TemplatedLinkedList" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="link-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/templatedLinkedList.png" alt="TemplatedLinkedList" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">TemplatedLinkedList</h3>
+
+                <p class="project-category">C++</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="java">
+              <a href="https://github.com/RebeccaVelez/Pakudex" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="link-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/pakudex.png" alt="Pakudex" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Pakudex</h3>
+
+                <p class="project-category">Java</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #COURSEWORK
+      -->
+
+      <article class="coursework" data-page="coursework">
+
+        <header>
+          <h2 class="h2 article-title">Coursework</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Bachelor's Degree in Computer Science</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">CIS 4914 - Senior Project</h4>
+              <p class="timeline-item-subtitle">Grade: --</p>
+              <span>Spring 2023</span>
+              <p class="timeline-text">
+                Involves completing a significant CISE-related project. Coordinate with the instructor and a project advisor, prepare a detailed technical report and deliver an oral presentation.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">COP 4600 - Operating Systems</h4>
+              <p class="timeline-item-subtitle">Grade: --</p>
+              <span>Spring 2023</span>
+              <p class="timeline-text">
+                Design and implementation of various components of a modern operating system, including I/O programming, interrupt handling, process and resource management, computer networks and distributed systems.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">STA 3032 - Engineering Statistics</h4>
+              <p class="timeline-item-subtitle">Grade: --</p>
+              <span>Spring 2023</span>
+              <p class="timeline-text">
+                A survey of the basic concepts in probability and statistics with engineering applications. Topics include probability, discrete and continuous random variables, confidence interval estimation, hypothesis testing, correlation, regression, and analysis of variance.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">CAP 3027 - Introduction to Digital Arts and Sciences</h4>
+              <p class="timeline-item-subtitle">Grade: A</p>
+              <span>Fall 2022</span>
+              <p class="timeline-text">
+                Synergy between art and computing through a programming-oriented exploration of fundamental concepts in multimedia.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">CEN 3031 - Introduction to Software Engineering</h4>
+              <p class="timeline-item-subtitle">Grade: A</p>
+              <span>Fall 2022</span>
+              <p class="timeline-text">
+                Topics include software planning, specifications, coding, testing and maintenance. Gain experience in the team approach to large system development.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">CIS 4204 - Penetration Testing: Ethical Hacking</h4>
+              <p class="timeline-item-subtitle">Grade: A</p>
+              <span>Fall 2022</span>
+              <p class="timeline-text">
+                Introduces principles and techniques associated with the cybersecurity practice known as penetration testing or ethical hacking. Covers planning, reconnaissance, scanning, exploitation, post-exploitation, and result reporting. Discover how system vulnerabilities can be exploited and learn to avoid such problems.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">COP 4020 - Programming Language Concepts</h4>
+              <p class="timeline-item-subtitle">Grade: A</p>
+              <span>Fall 2022</span>
+              <p class="timeline-text">
+                Introduces programming language principles, including language constructs, design goals, run-time structures, implementation techniques and exposure to a wide variety of programming paradigms.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">EGS 4034 - Engineering Professionalism and Ethics</h4>
+              <p class="timeline-item-subtitle">Grade: A</p>
+              <span>Fall 2022</span>
+              <p class="timeline-text">
+                This course is designed to introduce engineering students to the concepts, theory and practice of engineering ethics. It will allow students to explore the relationship between ethics and engineering and apply classical moral theory and decision making to engineering issues encountered in academic and professional careers.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">CIS 4360 - Computer and Information Security</h4>
+              <p class="timeline-item-subtitle">Grade: A</p>
+              <span>Summer 2022</span>
+              <p class="timeline-text">
+                Covers systematic threat and risk assessment; programmed threats and controls in hardware, software, and human procedures; security policies, models, and mechanisms; theoretical limitations and practical implementations; certification and accreditation standards; and case study reviews. Includes projects.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">CDA 3101 - Introduction to Computer Organization</h4>
+              <p class="timeline-item-subtitle">Grade: A</p>
+              <span>Spring 2022</span>
+              <p class="timeline-text">
+                Organization of computing systems. Logical basis of computer structure. Machine representation of instructions and data, flow of control, and basic machine instructions. Assembly language programming.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">CIS 4301 - Information and Database Systems 1</h4>
+              <p class="timeline-item-subtitle">Grade: B+</p>
+              <span>Spring 2022</span>
+              <p class="timeline-text">
+                First part of a two-course sequence that studies the essential concepts, principles and techniques of modern database systems. Topics include modeling and querying of data using conceptual data models as well as the development of a database application.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">COP 3530 - Data Structures and Algorithm</h4>
+              <p class="timeline-item-subtitle">Grade: A</p>
+              <span>Spring 2022</span>
+              <p class="timeline-text">
+                Algorithm development using pseudo languages, basic program structures, program design techniques, storage and manipulation of basic data structures like arrays, stacks, queues, sorting and searching and string processing. Linked linear lists. Trees and multilinked structures
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">COP 3503C - Programming Fundamentals 2</h4>
+              <p class="timeline-item-subtitle">Grade: A</p>
+              <span>Fall 2021</span>
+              <p class="timeline-text">
+                Second course of a two-semester introductory sequence for those planning further study in computer science, digital arts and sciences or computer engineering. Concepts of computer science and the process of computer programming, including object-oriented programming, procedural and data abstraction and program modularity.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">COT 3100 - Applications of Discrete Structures</h4>
+              <p class="timeline-item-subtitle">Grade: A</p>
+              <span>Fall 2021</span>
+              <p class="timeline-text">
+                Covers the mathematics of discrete events; i.e., events that involve distinct elements, finite structures of distinct elements or finite sampled versions of continuous phenomena (such as movement).
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">ENC 3246 - Professional Communications for Engineers</h4>
+              <p class="timeline-item-subtitle">Grade: A</p>
+              <span>Fall 2021</span>
+              <p class="timeline-text">
+                Students master a variety of communication strategies and genres of writing relevant to engineering, such as composing email, memos, letters, technical descriptions, instructions, academic research reports and professional proposals. Students also respond to complex rhetorical situations, thus preparing for work in their professional communities.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">COP 3502 - Programming Fundamentals 1</h4>
+              <p class="timeline-item-subtitle">Grade: A</p>
+              <span>Summer 2021</span>
+              <p class="timeline-text">
+                First course of a two-semester introductory sequence for those planning further study in computer science, digital arts and sciences or computer engineering. Concepts of computer science and the process of computer programming, including object-oriented programming, procedural and data abstraction and program modularity.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">MAS 3114 - Computational Linear Algebra</h4>
+              <p class="timeline-item-subtitle">Grade: A-</p>
+              <span>Summer 2021</span>
+              <p class="timeline-text">
+                Linear equations, matrices and determinants. Vector spaces and linear transformations. Inner products and eigenvalues. Emphasizes computational aspects of linear algebra.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+<!--      <article class="contact" data-page="contact">-->
+
+<!--        <header>-->
+<!--          <h2 class="h2 article-title">Contact</h2>-->
+<!--        </header>-->
+
+<!--&lt;!&ndash;        <section class="mapbox" data-mapbox>&ndash;&gt;-->
+<!--&lt;!&ndash;          <figure>&ndash;&gt;-->
+<!--&lt;!&ndash;            <iframe&ndash;&gt;-->
+<!--&lt;!&ndash;              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"&ndash;&gt;-->
+<!--&lt;!&ndash;              width="400" height="300" loading="lazy"></iframe>&ndash;&gt;-->
+<!--&lt;!&ndash;          </figure>&ndash;&gt;-->
+<!--&lt;!&ndash;        </section>&ndash;&gt;-->
+
+<!--        <section class="contact-form">-->
+
+<!--          <h3 class="h3 form-title">Contact Form</h3>-->
+
+<!--          <form action="mailto:contact@rebeccavelez.com" class="form" data-form>-->
+
+<!--            <div class="input-wrapper">-->
+<!--              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>-->
+
+<!--              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>-->
+<!--            </div>-->
+
+<!--            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>-->
+
+<!--            <button class="form-btn" type="submit" disabled data-form-btn>-->
+<!--              <ion-icon name="paper-plane"></ion-icon>-->
+<!--              <span>Send Message</span>-->
+<!--            </button>-->
+
+<!--          </form>-->
+
+<!--        </section>-->
+
+<!--      </article>-->
+
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  </main>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@6.0.4/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@6.0.4/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
