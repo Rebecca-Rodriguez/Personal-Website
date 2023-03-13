@@ -417,15 +417,25 @@ main {
   width: calc(100% - 46px);
 }
 
-.contact-title {
+/* .contact-title {
   color: var(--light-gray-70);
   font-size: var(--fs-8);
   text-transform: uppercase;
   margin-bottom: 2px;
+} */
+
+.contact-title {
+  color: var(--white-2);
+  font-size: var(--fs-7);
+  /* font-weight: bold; */
+  text-transform: uppercase;
 }
 
+.contact-title:hover,
+/* .contact-title:focus { color: var(--orange-yellow-crayol); } */
+
 .contact-info :is(.contact-link, time, address) {
-  color: var(--white-2);
+  color: var(--vegas-gold);
   font-size: var(--fs-7);
 }
 
